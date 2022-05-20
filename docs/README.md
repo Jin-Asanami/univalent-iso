@@ -1,6 +1,8 @@
 INDEX
 -----
 
+This is Archiso's fork for Akibae OS.
+
 * Transfer ISO file to target medium (configs/ll_CC)
   * To -> CD / DVD / BD
   * To -> USB-key / SD / HDD / SSD
