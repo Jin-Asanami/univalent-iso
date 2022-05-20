@@ -1,7 +1,7 @@
 INDEX
 -----
 
-* Transfer ISO file to target medium (configs/releng)
+* Transfer ISO file to target medium (configs/ll_CC)
   * To -> CD / DVD / BD
   * To -> USB-key / SD / HDD / SSD
     * PC-BIOS (MBR)
@@ -11,11 +11,13 @@ INDEX
 
 
 
-*** Transfer ISO image to target medium (configs/releng)
+*** Transfer ISO image to target medium (configs/ll_CC)
 
-ISO images names consist of: archlinux-<YYYY>.<MM>.<DD>-x86_64.iso
+ISO images names consist of: akibae-<ll>-<YYYY>.<MM>.<DD>-x86_64.iso
 
 Where:
+    <ll> Language (ja or en, We plan to add various things in the future.)
+    <CC> Country (JP or US, Same as above.)
     <YYYY> Year
     <MM> Month
     <DD> Day
