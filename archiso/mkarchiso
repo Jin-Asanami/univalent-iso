@@ -1191,8 +1191,8 @@ _make_version() {
     if [[ "${_os_release}" != "${pacstrap_dir}"* ]]; then
         _msg_warning "os-release file '${_os_release}' is outside of valid path."
     else
-        [[ ! -e "${_os_release}" ]] || sed -i '/^NAME=/d;/^PRETTY_NAME=/d;/^HOME_URL=/d;/^DOCUMENTATION_URL=/d;/^SUPPORT_URL=/d;/^BUG_REPORT_URL=/d;' "${_os_release}"
-        printf 'NAME="Akibae OS"\nPRETTY_NAME="Akibae OS"\nHOME_URL="https://w.atwiki.jp/fmuchikawa777/pages/87.html"\nSUPPORT_URL="https://osdn.net/projects/akibaeos"\nDOCUMENTATION_URL="https://osdn.net/projects/akibaeos/wiki/FrontPage"\nBUG_REPORT_URL="https://osdn.net/projects/akibaeos/forums/"\n' >> "${_os_release}"
+        [[ ! -e "${_os_release}" ]] || sed -i '/^NAME=/d;/^PRETTY_NAME=/d;' "${_os_release}"
+        printf 'NAME="Akibae OS"\nPRETTY_NAME="Akibae OS"\n' >> "${_os_release}"
     fi
     _msg_info "Done!"
 }
