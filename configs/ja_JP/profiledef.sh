@@ -2,10 +2,10 @@
 # shellcheck disable=SC2034
 
 iso_name="akibae-ja"
-iso_label="AKIBAE_JA_$(date +%Y%m%d)"
+iso_label="AKIBAE_JA_$(date +%Y%m%d)_BETA"
 iso_publisher="RadioNewJapan"
 iso_application="Akibae OS Install Drive"
-iso_version="$(date +%Y.%m.%d).a"
+iso_version="$(date +%Y.%m.%d).b"
 install_dir="arch"
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
 arch="x86_64"
