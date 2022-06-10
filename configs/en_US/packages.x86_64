@@ -135,18 +135,22 @@ xf86-video-vmware
 
 #Akibae OS Applications
 aptpac
+archlinux-appstream-data-pamac
 base-devel
 chromium
 curl
 fcitx5
 fcitx5-configtool
+fcitx5-mozc
 fdclone
 git
 k3b
 kcalc
 ksysguard
+libpamac-aur
 libreoffice-fresh
-octopi
+libreoffice-fresh-ja
+pamac-aur
 papirus-icon-theme
 partitionmanager
 qlipper
