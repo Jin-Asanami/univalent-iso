@@ -1,5 +1,5 @@
-akibaeiso
+univalent-iso
 -----
-AkibaeISO is a modified version of Archiso for AkibaeOS.
+UniVaISO is a modified version of Archiso for Univalent GNU/Linux (UVGL).
 
-AkibaeISOはAkibaeOS(秋映OS)のための改造版Archisoでございます。
+UniVaISOはUnivalent GNU/Linux (UVGL)のための改造版Archisoでございます。
