@@ -102,7 +102,7 @@ xfsprogs
 xl2tpd
 zsh
 
-#Akibae OS LXQt
+#Univalent GNU/Linux LXQt
 lxqt
 xorg-server
 lightdm
@@ -122,7 +122,7 @@ noto-fonts
 #Installer
 grub
 calamares
-akibae-os-calam-cfg
+uvgl-calam-cfg
 os-prober
 
 #Graphics Driver
@@ -133,7 +133,7 @@ xf86-video-nouveau
 xf86-video-openchrome
 xf86-video-vmware
 
-#Akibae OS Applications
+#UVGL Applications
 aptpac
 archlinux-appstream-data-pamac
 base-devel
