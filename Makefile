@@ -21,7 +21,7 @@ install: install-scripts install-profiles install-doc
 
 install-scripts:
 	install -vDm 755 univaiso/mkunivaiso -t "$(BIN_DIR)/"
-	install -vDm 755 scripts/run_univaiso.sh "$(BIN_DIR)/run_univaiso"
+	install -vDm 755 scripts/run_archiso.sh "$(BIN_DIR)/run_univaiso"
 
 install-doc:
 	install -vDm 644 $(DOC_FILES) -t $(DOC_DIR)
