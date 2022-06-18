@@ -3,11 +3,11 @@
 
 PREFIX ?= /usr/local
 BIN_DIR=$(DESTDIR)$(PREFIX)/bin
-DOC_DIR=$(DESTDIR)$(PREFIX)/share/doc/archiso
-PROFILE_DIR=$(DESTDIR)$(PREFIX)/share/archiso
+DOC_DIR=$(DESTDIR)$(PREFIX)/share/doc/univaiso
+PROFILE_DIR=$(DESTDIR)$(PREFIX)/share/univaiso
 
 DOC_FILES=$(wildcard docs/*) $(wildcard *.rst)
-SCRIPT_FILES=$(wildcard archiso/*) $(wildcard scripts/*.sh) $(wildcard .gitlab/ci/*.sh) \
+SCRIPT_FILES=$(wildcard univaiso/*) $(wildcard archiso/*) $(wildcard scripts/*.sh) $(wildcard .gitlab/ci/*.sh) \
              $(wildcard configs/*/profiledef.sh) $(wildcard configs/*/airootfs/usr/local/bin/*)
 
 all:
@@ -20,8 +20,8 @@ shellcheck:
 install: install-scripts install-profiles install-doc
 
 install-scripts:
-	install -vDm 755 archiso/mkarchiso -t "$(BIN_DIR)/"
-	install -vDm 755 scripts/run_archiso.sh "$(BIN_DIR)/run_archiso"
+	install -vDm 755 univaiso/mkunivaiso -t "$(BIN_DIR)/"
+	install -vDm 755 scripts/run_univaiso.sh "$(BIN_DIR)/run_univaiso"
 
 install-doc:
 	install -vDm 644 $(DOC_FILES) -t $(DOC_DIR)
