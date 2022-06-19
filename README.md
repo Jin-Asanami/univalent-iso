@@ -1,10 +1,10 @@
-#UniVaISO (main/univalent-iso)
+# UniVaISO (main/univalent-iso)
 -----
 UniVaISO is a modified version of Archiso for Univalent GNU/Linux (UVGL).
 
 UniVaISOはUnivalent GNU/Linux (UVGL)のための改造版Archisoでございます。
 
-##How to install
+## How to install
 1. Open /etc/pacman.conf, add and save the following:
 ```bash
 [main]
@@ -22,7 +22,7 @@ sudo pacman -Syu
 sudo pacman -S univalent-iso
 ```
 
-##導入方法
+## 導入方法
 1. 「/etc/pacman.conf」を開き、以下を追加して保存します。
 ```bash
 [main]
