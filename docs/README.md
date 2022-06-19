@@ -1,2 +1,2 @@
-UniVaISO (main/univalen-iso)
+UniVaISO (main/univalent-iso)
 -----
