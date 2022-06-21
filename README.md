@@ -10,6 +10,10 @@ UniVaISOはUnivalent GNU/Linux (UVGL)のための改造版Archisoでございま
 [main]
 SigLevel = Optional TrustAll
 Server = https://osdn.net/projects/univalentgnulinux/storage/repo/main
+
+[universe]
+SigLevel = Optional TrustAll
+Server = https://osdn.net/projects/univalentgnulinux/storage/repo/universe
 ```
 
 2. Update package lists.
@@ -28,6 +32,10 @@ sudo pacman -S univalent-iso
 [main]
 SigLevel = Optional TrustAll
 Server = https://osdn.net/projects/univalentgnulinux/storage/repo/main
+
+[universe]
+SigLevel = Optional TrustAll
+Server = https://osdn.net/projects/univalentgnulinux/storage/repo/universe
 ```
 
 2. パッケージリストの更新をします。
