@@ -21,6 +21,7 @@ work_dir=""
 out_dir=""
 gpg_key=""
 gpg_sender=""
+os_name
 iso_name=""
 iso_label=""
 iso_publisher=""
@@ -1531,7 +1532,7 @@ _make_version() {
         _msg_warning "os-release file '${_os_release}' is outside of valid path."
     else
         [[ ! -e "${_os_release}" ]] || sed -i '/^NAME=/d;/^PRETTY_NAME=/d;' "${_os_release}"
-        printf 'NAME="Univalent GNU/Linux"\nPRETTY_NAME="Univalent GNU/Linux"\n' >> "${_os_release}"
+        printf 'NAME="${os_name}"\nPRETTY_NAME="${os_name}"\n' >> "${_os_release}"
     fi
     _msg_info "Done!"
 }
