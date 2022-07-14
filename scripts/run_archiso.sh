@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
-# A simple script to run an archiso image using qemu. The image can be booted
+# A simple script to run an univaiso image using qemu. The image can be booted
 # using BIOS or UEFI.
 #
 # Requirements:
@@ -18,7 +18,7 @@ print_help() {
     local usagetext
     IFS='' read -r -d '' usagetext <<EOF || true
 Usage:
-    run_archiso [options]
+    run_univaiso [options]
 
 Options:
     -a              set accessibility support using brltty
@@ -33,7 +33,7 @@ Options:
 
 Example:
     Run an image using UEFI:
-    $ run_archiso -u -i archiso-2020.05.23-x86_64.iso
+    $ run_univaiso -u -i uvgl-lxqt-ja-22.07.11.g-x86_64.iso
 EOF
     printf '%s' "${usagetext}"
 }
@@ -159,7 +159,7 @@ if (( ${#@} > 0 )); then
                 qemu_options+=(-vnc 'vnc=0.0.0.0:0,vnc=[::]:0')
                 ;;
             *)
-                printf '%s\n' "Error: Wrong option. Try 'run_archiso -h'."
+                printf '%s\n' "Error: Wrong option. Try 'run_univaiso -h'."
                 exit 1
                 ;;
         esac
